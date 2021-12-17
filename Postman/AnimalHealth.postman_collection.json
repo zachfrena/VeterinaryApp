@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "f81578a5-aeb0-43e8-b93b-759eaab916d4",
+		"name": "AnimalHealth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Diagnosis",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagnosisDetail\":\"Ear Bleeding\",\r\n    \"submissionDate\":\"12/02/2021\",\r\n    \"uID\":1001\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/diagnose",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"diagnose"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prescription",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"submissionDate\":\"12/05/2021\",\r\n    \"uID\":1034\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/prescription",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prescription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TreatmentRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagnosisID\":400,\r\n    \"animalID\":9099,\r\n    \"treatmentStatus\":\"Ongoing\",\r\n    \"treatmentDate\":\"12/06/2021\",\r\n    \"treatmentTypeID\":2,\r\n    \"careAttendantID\":4044\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/treatmentRequest",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"treatmentRequest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

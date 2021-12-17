@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "07b92bb2-0476-48a6-b87a-eba9dbd852b7",
+		"name": "Animal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddAnimal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tattooNumber\": 1001,\r\n    \"cityTattoo\": \"CAL101\",\r\n    \"name\": \"Buddy\",\r\n    \"age\": 2,\r\n    \"weight\": 10.4,\r\n    \"sex\": \"M\",\r\n    \"birthDate\": \"2019/09/10\",\r\n    \"breed\" : \"husky\",\r\n    \"coatColor\": \"white\",\r\n    \"species\":\"Dog\",\r\n    \"purpose\":\"Live Life\",\r\n    \"borrowStatus\":0,\r\n    \"permanentLocation\":\"Home\",\r\n    \"profileImage\":\"image.png\",\r\n    \"active\": 0,\r\n    \"rfid\": 102,\r\n    \"microchip\": 101\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/addAnimal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addAnimal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchAnimal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"buddy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/searchAnimal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"searchAnimal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateAnimal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"age\": 2,\r\n    \"weight\": 10.4,\r\n    \"purpose\":\"Live Life\",\r\n    \"borrowStatus\":0,\r\n    \"permanentLocation\":\"Home\",\r\n    \"profileImage\":\"image.png\",\r\n    \"active\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateAnimal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateAnimal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AnimalProfile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"animalID\": 10034,\r\n    \"healthID\": 2,\r\n    \"borrowID\": 0,\r\n    \"tattooNumber\": 1001,\r\n    \"cityTattoo\": \"CAL101\",\r\n    \"name\": \"Buddy\",\r\n    \"age\": 2,\r\n    \"weight\": 10.4,\r\n    \"sex\": \"M\",\r\n    \"birthDate\": \"2019/09/10\",\r\n    \"breed\" : \"husky\",\r\n    \"coatColor\": \"white\",\r\n    \"species\":\"Dog\",\r\n    \"purpose\":\"Live Life\",\r\n    \"borrowStatus\":0,\r\n    \"permanentLocation\":\"Home\",\r\n    \"profileImage\":\"image.png\",\r\n    \"active\": 0,\r\n    \"rfid\": 102,\r\n    \"microchip\": 101\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/animalProfile",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"animalProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RequestAnimal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"animalID\": 10034,\r\n    \"healthID\": 2,\r\n    \"borrowID\": 0,\r\n    \"tattooNumber\": 1001,\r\n    \"cityTattoo\": \"CAL101\",\r\n    \"name\": \"Buddy\",\r\n    \"age\": 2,\r\n    \"weight\": 10.4,\r\n    \"sex\": \"M\",\r\n    \"birthDate\": \"2019/09/10\",\r\n    \"breed\" : \"husky\",\r\n    \"coatColor\": \"white\",\r\n    \"species\":\"Dog\",\r\n    \"purpose\":\"Live Life\",\r\n    \"borrowStatus\":0,\r\n    \"permanentLocation\":\"Home\",\r\n    \"profileImage\":\"image.png\",\r\n    \"active\": 0,\r\n    \"rfid\": 102,\r\n    \"microchip\": 101\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/requestAnimal?fromDate=12/01/2021&toDate=12/03/2021&borrowerID=1001",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"requestAnimal"
+					],
+					"query": [
+						{
+							"key": "fromDate",
+							"value": "12/01/2021"
+						},
+						{
+							"key": "toDate",
+							"value": "12/03/2021"
+						},
+						{
+							"key": "borrowerID",
+							"value": "1001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReturnAnimal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"animalID\": 10034,\r\n    \"healthID\": 2,\r\n    \"borrowID\": 0,\r\n    \"tattooNumber\": 1001,\r\n    \"cityTattoo\": \"CAL101\",\r\n    \"name\": \"Buddy\",\r\n    \"age\": 2,\r\n    \"weight\": 10.4,\r\n    \"sex\": \"M\",\r\n    \"birthDate\": \"2019/09/10\",\r\n    \"breed\" : \"husky\",\r\n    \"coatColor\": \"white\",\r\n    \"species\":\"Dog\",\r\n    \"purpose\":\"Live Life\",\r\n    \"borrowStatus\":0,\r\n    \"permanentLocation\":\"Home\",\r\n    \"profileImage\":\"image.png\",\r\n    \"active\": 0,\r\n    \"rfid\": 102,\r\n    \"microchip\": 101\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/returnAnimal?borrowID=1001&returnDate=12/03/2021",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"returnAnimal"
+					],
+					"query": [
+						{
+							"key": "borrowID",
+							"value": "1001"
+						},
+						{
+							"key": "returnDate",
+							"value": "12/03/2021"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

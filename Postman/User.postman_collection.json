@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "c3ef93e2-2482-4c3b-abf5-cb28c678794f",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UserLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fname\":\"meet\",\r\n    \"lname\":\"pandya\",\r\n    \"email\":\"meet@gmail.com\",\r\n    \"password\":\"meet123\",\r\n    \"type\":\"student\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fname\":\"meet\",\r\n    \"lname\":\"pandya\",\r\n    \"email\":\"meet@gmail.com\",\r\n    \"password\":\"meet123\",\r\n    \"type\":\"student\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/addUser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ViewAllUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/viewAllUsers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"viewAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/updateUser?role=admin&username=meet&email=meet@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateUser"
+					],
+					"query": [
+						{
+							"key": "role",
+							"value": "admin"
+						},
+						{
+							"key": "username",
+							"value": "meet"
+						},
+						{
+							"key": "email",
+							"value": "meet@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BlockUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/blockUser?userID=1001",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"blockUser"
+					],
+					"query": [
+						{
+							"key": "userID",
+							"value": "1001"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
