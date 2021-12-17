@@ -1,5 +1,25 @@
-# Final-Project
-607 final project
+# Project Overview
+Our goal was to create a web application for the school of Veterinary Medicine at the University of Calgary to help manage their animals and process requests for delivering
+animals to teaching staff.
+
+Functionality:
+
+1. Manage animals
+    
+    a. Create animal profile (Every animal can have different properties based on type but some properties are the same for example (Name, sex, age, RFID))
+    
+    b. Search animals
+    
+    c. Ongoing care process (Annual check and vaccination)
+
+
+2. User Management
+    
+    a. Add users
+    
+    b. Access control
+    
+    c. Manage users (block, suspend, etc)
 
 ## WHO - Developers
 - Zachary Frena
@@ -49,5 +69,5 @@ The API code is split into 4 packages - **Controller**, **Exception**, **Helper*
 - In order to run the code, you just need to run the **BackendApplication.java** and it will start the spring server
 - If you are using an IDE like IntelliJ or Eclipse, after cloning the repo, make sure to create a Configuration that's pointed to **BackendApplication.java**
 ## WHY
-- This is the Final Project for ENSF607 course at University of Calgary
+- This was the Final Project for ENSF607 course at University of Calgary
 - The project is designed for the Vet Department at University of Calgary
